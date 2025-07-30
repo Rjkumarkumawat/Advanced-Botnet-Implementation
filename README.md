@@ -38,6 +38,19 @@ This repository contains a proof-of-concept botnet with advanced features design
 - Encrypted communication
 - Session persistence
 
+---
+
+## 🧠 Architecture
+
+```plaintext
+┌───────────────┐      AES Encrypted     ┌───────────────┐
+│   Client Bot  │◄──────────────────────►│     Server    │
+│(victim.py)    │      TCP Socket        │ (C2 Panel)    │
+└───────────────┘                        └───────────────┘
+```
+
+---
+
 ## Prerequisites
 
 ### For Server:
